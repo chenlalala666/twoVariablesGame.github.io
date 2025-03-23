@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>节气列表 - 二十四节气</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <div class="device">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <div class="time">09:29</div>
+      <div class="right">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+      <!-- 搜索栏 -->
+      <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="search-input" placeholder="搜索节气">
+      </div>
+
+      <!-- 季节标签 -->
+      <div style="display: flex; padding: 15px; gap: 10px; overflow-x: auto;">
+        <div style="padding: 8px 15px; background-color: var(--spring-color); color: white; border-radius: 20px; white-space: nowrap;">
+          <i class="fas fa-leaf"></i> 春季
+        </div>
+        <div style="padding: 8px 15px; background-color: #e0e0e0; color: #666; border-radius: 20px; white-space: nowrap;">
+          <i class="fas fa-sun"></i> 夏季
+        </div>
+        <div style="padding: 8px 15px; background-color: #e0e0e0; color: #666; border-radius: 20px; white-space: nowrap;">
+          <i class="fas fa-tree"></i> 秋季
+        </div>
+        <div style="padding: 8px 15px; background-color: #e0e0e0; color: #666; border-radius: 20px; white-space: nowrap;">
+          <i class="fas fa-snowflake"></i> 冬季
+        </div>
+      </div>
+
+      <!-- 春季节气列表 -->
+      <div class="card">
+        <div style="padding: 15px; background-color: var(--spring-color); color: white;">
+          <h3>春季节气</h3>
+        </div>
+        
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">立春 (2月3-5日)</div>
+            <div class="list-item-subtitle">春季的第一个节气，一年的开始</div>
+          </div>
+          <div style="color: #aaa;">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-cloud-rain"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">雨水 (2月18-20日)</div>
+            <div class="list-item-subtitle">降雨开始，雨量渐增</div>
+          </div>
+          <div style="color: #aaa;">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">惊蛰 (3月5-7日)</div>
+            <div class="list-item-subtitle">春雷始鸣，惊醒蛰伏的生物</div>
+          </div>
+          <div style="color: #aaa;">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-equals"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">春分 (3月20-22日)</div>
+            <div class="list-item-subtitle">昼夜平分，春季中点</div>
+          </div>
+          <div style="color: #aaa;">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-cloud-sun-rain"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">清明 (4月4-6日)</div>
+            <div class="list-item-subtitle">天气清爽明朗，祭祀先人</div>
+          </div>
+          <div style="color: #aaa;">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">谷雨 (4月19-21日)</div>
+            <div class="list-item-subtitle">雨水滋润禾苗，利于种植</div>
+          </div>
+          <div style="color: #aaa;">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 其他季节的卡片可以折叠起来 -->
+      <div class="card">
+        <div style="padding: 15px; background-color: #e0e0e0; color: #666; display: flex; justify-content: space-between; align-items: center;">
+          <h3>夏季节气</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div style="padding: 15px; background-color: #e0e0e0; color: #666; display: flex; justify-content: space-between; align-items: center;">
+          <h3>秋季节气</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div style="padding: 15px; background-color: #e0e0e0; color: #666; display: flex; justify-content: space-between; align-items: center;">
+          <h3>冬季节气</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+      <div class="tab-item">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+      </div>
+      <div class="tab-item active">
+        <i class="fas fa-calendar-alt"></i>
+        <span>节气</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-book-open"></i>
+        <span>养生</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

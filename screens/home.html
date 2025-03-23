@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页 - 二十四节气</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <div class="device">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <div class="time">09:29</div>
+      <div class="right">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- 内容区域 -->
+    <div class="content">
+      <!-- 当前节气展示 -->
+      <div class="current-solar-term" style="background-color: var(--spring-color);">
+        <div class="term-title">二十四节气</div>
+        <div class="term-date">草木萌动</div>
+        <div class="term-description">
+          <p>惊蛰，是二十四节气之一，春季的第三个节气。斗指丁，太阳到达黄经345°，于公历3月5-6日之间交节。</p>
+          <p>"惊蛰"的意思是天气回暖，春雷始鸣，惊醒了蛰伏在土中冬眠的众多生物。</p>
+        </div>
+        <img src="../img/24jieqi_example.png" alt="节气图片" style="position: absolute; right: -40px; top: 10px; width: 180px; height: auto; opacity: 0.8;">
+      </div>
+
+      <!-- 日历区域 -->
+      <div class="card">
+        <div class="calendar-header">
+          <div><i class="fas fa-chevron-left"></i></div>
+          <div>2025年 3月</div>
+          <div><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div style="padding: 15px;">
+          <!-- 日历网格 - 简化版 -->
+          <div style="display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; gap: 10px;">
+            <div>日</div>
+            <div>一</div>
+            <div>二</div>
+            <div>三</div>
+            <div>四</div>
+            <div>五</div>
+            <div>六</div>
+            <!-- 日期行 -->
+            <div style="color: #aaa;">23</div>
+            <div style="color: #aaa;">24</div>
+            <div style="color: #aaa;">25</div>
+            <div style="color: #aaa;">26</div>
+            <div style="color: #aaa;">27</div>
+            <div style="color: #aaa;">28</div>
+            <div>1</div>
+            
+            <div>2</div>
+            <div>3</div>
+            <div style="background-color: var(--spring-color); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; margin: auto;">4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 二十四节气列表预览 -->
+      <div class="card">
+        <div style="padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+          <h3>二十四节气</h3>
+          <span style="color: var(--primary-color);">查看全部 <i class="fas fa-chevron-right"></i></span>
+        </div>
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">立春 (2月3-5日)</div>
+            <div class="list-item-subtitle">春季的第一个节气，一年的开始</div>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-cloud-rain"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">雨水 (2月18-20日)</div>
+            <div class="list-item-subtitle">降雨开始，雨量渐增</div>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-item-icon" style="background-color: var(--spring-color); color: white;">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="list-item-content">
+            <div class="list-item-title">惊蛰 (3月5-7日)</div>
+            <div class="list-item-subtitle">春雷始鸣，惊醒蛰伏的生物</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+      <div class="tab-item active">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-calendar-alt"></i>
+        <span>节气</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-book-open"></i>
+        <span>养生</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
